@@ -1,0 +1,151 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #5e412f;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #a1887f;
+  border-radius: 5px;
+}
+
+/* Home Page */
+.home {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.home-content img {
+  width: 90%;
+  max-width: 700px;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Menu Page */
+.menu {
+  padding: 100px 20px 40px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #5e412f;
+}
+
+.menu h3 {
+  margin-top: 2rem;
+  color: #6d4c41;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 1rem;
+}
+
+.menu-items .item {
+  width: 180px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.menu-items .item:hover {
+  transform: scale(1.05);
+}
+
+.menu-items img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Feedback Page */
+.feedback {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.feedback form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.feedback input,
+.feedback textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.feedback button {
+  padding: 10px 20px;
+  background-color: #5e412f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.feedback button:hover {
+  background-color: #a1887f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #5e412f;
+  color: #fff;
+}
+
