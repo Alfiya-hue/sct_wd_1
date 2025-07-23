@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ART ☕ - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">ART ☕</a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="home">
-    <div class="home-content">
-      <h1>Welcome to ART ☕</h1>
-      <p>Your cozy spot for coffee, food, and sweet treats</p>
-      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Cafe Ambiance">
+  <div class="container">
+    <h1>⏱ Stopwatch</h1>
+    <div id="display">00:00:00.000</div>
+    <div class="buttons">
+      <button onclick="start()">Start</button>
+      <button onclick="pause()">Pause</button>
+      <button onclick="reset()">Reset</button>
+      <button onclick="lap()">Lap</button>
     </div>
-  </section>
+    <ul id="laps"></ul>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 ART ☕. All rights reserved.</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
-
